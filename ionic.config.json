@@ -1,0 +1,7 @@
+{
+  "name": "nicepod",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
