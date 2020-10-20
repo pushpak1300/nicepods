@@ -16,3 +16,6 @@ export default defineComponent({
   }
 });
 </script>
+
+<style src="./css/app.css">
+</style>
