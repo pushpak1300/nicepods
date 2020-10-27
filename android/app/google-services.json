@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "988329437978",
+    "firebase_url": "https://nicepods.firebaseio.com",
+    "project_id": "nicepods",
+    "storage_bucket": "nicepods.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988329437978:android:75ad91f6e290fe35869aa3",
+        "android_client_info": {
+          "package_name": "com.pushpak.nicepods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988329437978-88c5evfvo5h3fnk0iloubuqhej5bpg1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBQbBMOUVAB_UFguy4abYQ0BTWNADHG4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988329437978-88c5evfvo5h3fnk0iloubuqhej5bpg1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

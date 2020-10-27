@@ -1,5 +1,5 @@
 import { toRefs, reactive } from "vue";
-import { provider, auth } from "../plugins/firebase";
+import { auth } from "../plugins/firebase";
 
 const state = reactive({
     user: null,
@@ -8,26 +8,35 @@ const state = reactive({
 });
 
 export default function () {
-    const login = () => {
-        return auth.signInWithPopup(provider)
-            .then(
-                (user) => {
-                    state.user = user;
-                    state.error = null;
-                    return user;
-                },
-                (error) => {
-                    state.error = error;
-                    throw error;
-                }
-            );
+    const register = async (email, password) => {
+        try {
+            const result = await auth.createUserWithEmailAndPassword(email, password);
+            state.user = result.user;
+            state.error = null;
+            return state.user;
+        } catch (error) {
+            state.error = error;
+            throw error;
+        }
     };
 
-    const logout = () => {
-        auth.signOut();
+    const login = async (email, password) => {
+        try {
+            const result = await auth.signInWithEmailAndPassword(email, password);
+            state.user = result.user;
+            state.error = null;
+            return state.user;
+        } catch (error) {
+            state.error = error;
+            throw error;
+        }
+    };
+
+    const logout = async () => {
+        await auth.signOut();
         state.user = null;
         return null;
-    }
+    };
 
     const authCheck = () => {
         return new Promise((resolve) => {
@@ -50,5 +59,6 @@ export default function () {
         login,
         logout,
         authCheck,
+        register
     };
 }

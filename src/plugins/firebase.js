@@ -20,14 +20,12 @@ if (firebase.apps.length === 0) {
   firebase.analytics();
 }
 
-const provider = new firebase.auth.GoogleAuthProvider();
 const db = firebase.firestore();
 const auth = firebase.auth();
 
-
-
 export {
   db,
-  auth,
-  provider
+  auth
 };
+
+

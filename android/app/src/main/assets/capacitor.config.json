@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "nicepod",
+  "appId": "com.pushpak.nicepods",
+  "appName": "nicepods",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "dist",
@@ -9,5 +9,6 @@
       "launchShowDuration": 0
     }
   },
-  "cordova": {}
+  "cordova": {},
+  "linuxAndroidStudioPath": "/snap/android-studio/current/android-studio/bin/studio.sh"
 }

@@ -1,24 +1,53 @@
-import { createRouter, createWebHistory } from '@ionic/vue-router';
+import { createRouter, createWebHistory  } from '@ionic/vue-router';
 import Tabs from '../views/Tabs.vue';
-import Login from '../views/Login.vue';
+import Home from '../views/Home.vue'
 import useFirebaseAuth from "../hooks/firebase-auth";
 
 const state = useFirebaseAuth();
 
+const ifNotAuthenticated = (_to, _from, next) => {
+  if (!state.user.value) {
+    next()
+    return
+  }
+  next('/tabs/tab1')
+}
+
+// eslint-disable-next-line
+const ifAuthenticated = (_to, _from, next) => {
+  if (state.user.value) {
+    next()
+    return
+  }
+  next('/login')
+}
+
 const routes = [
   {
     path: "/",
-    redirect: "/login",
+    redirect: "home"
   },
   {
     path: "/login",
     name: "Login",
-    component: Login,
+    component: () => import("@/views/Login.vue"),
+    beforeEnter: ifNotAuthenticated
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () => import("@/views/Register.vue"),
+    beforeEnter: ifNotAuthenticated
+  },
+  {
+    path: "/home",
+    component: Home,
   },
   {
     path: "/tabs/",
     component: Tabs,
     name: "Home",
+    beforeEnter: ifAuthenticated,
     children: [
       {
         path: "",
@@ -45,17 +74,18 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, _from, next) => {
 
-  if (state.user.value && (to.name === 'Login')) {
-    next('/tabs/tab1')
-  }
+// router.beforeEach((to, _from, next) => {
 
-  if (!state.user.value && (to.name !== 'Login')) {
-    next('/login')
-  }
+//   if (state.user.value && (to.name === 'Login')) {
+//     next('/tabs/tab1')
+//   }
 
-  next();
-});
+//   if (!state.user.value && (to.name !== 'Login')) {
+//     next('/login')
+//   }
+
+//   next();
+// });
 
 export default router
