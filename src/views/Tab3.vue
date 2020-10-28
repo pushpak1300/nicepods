@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 3</ion-title>
+        <ion-title align= center>Activity</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -12,17 +12,18 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Tab 3 page" />
+      <ActivityContainer name="Tab 3 page" />
     </ion-content>
   </ion-page>
 </template>
 
-<script>
+<script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import ActivityContainer from '@/components/ActivityContainer.vue';
+import { defineComponent } from 'vue';
 
-export default  {
+export default defineComponent({
   name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-}
+  components: { ActivityContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+});
 </script>
