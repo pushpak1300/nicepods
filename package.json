@@ -14,10 +14,16 @@
     "@capacitor/core": "2.4.2",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
     "@tailwindcss/ui": "^0.6.2",
+    "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "firebase": "^7.24.0",
-    "tailwindcss": "^1.9.5",
+    "jquery": "^3.5.1",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
     "vue": "^3.0.0-0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-alpha.1"
@@ -35,6 +41,8 @@
     "@vue/test-utils": "^2.0.0-0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue-jest": "^5.0.0-0"
   },
   "description": "An Ionic project"

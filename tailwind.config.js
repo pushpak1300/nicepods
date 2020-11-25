@@ -13,9 +13,15 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            screens: {
+                light: { raw: "(prefers-color-scheme: light)" },
+                dark: { raw: "(prefers-color-scheme: dark)" }
+            }
         },
     },
     plugins: [
-        require('@tailwindcss/ui'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/aspect-ratio'),
     ]
 }

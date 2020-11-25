@@ -8,20 +8,20 @@
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Explore</ion-title>
+          <ion-title size="large text-center">Explore</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ExploreCardList/>
+      <explore-podcast/>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent} from '@ionic/vue';
-import ExploreCardList from '@/components/ExploreCardList.vue';
+import ExplorePodcast from '../components/ExplorePodcast.vue';
 
 export default {
   name: ' Tab2',
-  components: { IonPage,IonHeader,IonToolbar,IonTitle, IonContent,ExploreCardList},
+  components: { IonPage,IonHeader,IonToolbar,IonTitle, IonContent,ExplorePodcast},
 };
 </script>

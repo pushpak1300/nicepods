@@ -24,10 +24,14 @@ import "@ionic/vue/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 
+// const Flickity = require("flickity");
+// require("flickity-imagesloaded");
 
 const { authCheck } = useFirebaseAuth();
 
 const app = createApp(App).use(IonicVue);
+
+// app.config.globalProperties.Flickity = Flickity;
 
 authCheck()
   .then(() => {
