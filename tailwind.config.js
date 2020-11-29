@@ -6,8 +6,9 @@ module.exports = {
             './src/**/*.html',
             './src/**/*.vue',
             './src/**/*.jsx',
-        ],
+        ]
     },
+    darkMode: 'media',
     theme: {
         extend: {
             fontFamily: {
@@ -19,9 +20,12 @@ module.exports = {
             }
         },
     },
+    variants: {
+        extend: {},
+    },
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-    ]
+    ],
 }

@@ -20,22 +20,19 @@ import "@ionic/vue/css/text-alignment.css";
 import "@ionic/vue/css/text-transformation.css";
 import "@ionic/vue/css/flex-utils.css";
 import "@ionic/vue/css/display.css";
+import QrReader from 'vue3-qr-reader';
 
 /* Theme variables */
 import "./theme/variables.css";
-
-// const Flickity = require("flickity");
-// require("flickity-imagesloaded");
 
 const { authCheck } = useFirebaseAuth();
 
 const app = createApp(App).use(IonicVue);
 
-// app.config.globalProperties.Flickity = Flickity;
-
 authCheck()
   .then(() => {
     app.use(router);
+    app.use(QrReader);
     router.isReady();
   })
   .then(() => {

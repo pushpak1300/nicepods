@@ -2,7 +2,7 @@
   <ul class="flex space-x-2 items-center overflow-x-scroll">
     <li class="items-center flex flex-col space-y-0 w-1/3">
       <a href="#">
-        <img
+        <ion-img
           class="h-24 w-24 rounded-lg p-1"
           src="http://is5.mzstatic.com/image/thumb/Music71/v4/43/88/12/4388122e-226e-c59f-6d2d-88f7320f1aae/source/600x600bb.jpg"
           alt="kitten"
@@ -13,7 +13,7 @@
     </li>
     <li class="items-center flex flex-col space-y-0 w-1/3">
       <a href="#">
-        <img
+        <ion-img
           class="h-24 w-24 rounded-lg p-1"
           src="http://is5.mzstatic.com/image/thumb/Music71/v4/43/88/12/4388122e-226e-c59f-6d2d-88f7320f1aae/source/600x600bb.jpg"
           alt="kitten"
@@ -24,7 +24,7 @@
     </li>
     <li class="items-center flex flex-col space-y-0 w-1/3">
       <a href="#">
-        <img
+        <ion-img
           class="h-24 w-24 rounded-lg p-1"
           src="http://is5.mzstatic.com/image/thumb/Music71/v4/43/88/12/4388122e-226e-c59f-6d2d-88f7320f1aae/source/600x600bb.jpg"
           alt="kitten"
@@ -37,10 +37,13 @@
 </template>
 
 <script>
+import { IonImg } from "@ionic/vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "PodcastCard",
-  components: {},
+  components: {
+    IonImg
+  },
 });
 </script>
