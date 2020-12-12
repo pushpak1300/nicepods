@@ -30,6 +30,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#getting-started">Contributors</a>
+    </li>
   </ol>
 </details>
 
@@ -72,5 +75,5 @@ You should have LTS version of Node and npm.
    ionic serve
    ```
 
-
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawde</a> , <a href="https://github.com/dylandsouza00">Dylan Dsouza</a>.</b></h1>
+## Contributors
+Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawde</a> , <a href="https://github.com/dylandsouza00">Dylan Dsouza</a>.
