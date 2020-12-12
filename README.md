@@ -1,8 +1,4 @@
 
-[![MIT License][license-shield]][license-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -112,3 +108,4 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawade</a> , <a href="https://github.com/tanmay8266">Dylan Dsouza</a>.</b></h1>
