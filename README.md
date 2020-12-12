@@ -71,25 +71,4 @@ You should have LTS version of Node and npm.
    ```
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
 <h3 align="center"><b>Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawade</a> , <a href="https://github.com/tanmay8266">Dylan Dsouza</a>.</b></h1>
