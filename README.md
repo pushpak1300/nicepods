@@ -66,9 +66,9 @@ You should have LTS version of Node and npm.
    npm install
    ```
 4. Run your project.
-   ```JS
+   ```sh
    ionic serve
    ```
 
 
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawade</a> , <a href="https://github.com/tanmay8266">Dylan Dsouza</a>.</b></h1>
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/pushpak1300">Pushpak Chhajed </a> , <a href="https://github.com/chinmxy"> Chinmay Gawde</a> , <a href="https://github.com/dylandsouza00">Dylan Dsouza</a>.</b></h1>
