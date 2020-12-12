@@ -1,4 +1,3 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -7,11 +6,7 @@
   </a>
 
   <h3 align="center">NicePods - A podcast review app</h3>
-
- 
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
