@@ -43,7 +43,7 @@ So our goal was to create an app which makes it easier for podcast listeners to 
 
 ### Built With
 
-* [Tailwind css](https://tailwindcss.com/)
+* [Tailwind CSS](https://tailwindcss.com/)
 * [Ionic-Vue](https://ionicframework.com/docs/vue/overview)
 * [Firebase](https://firebase.google.com)
 
